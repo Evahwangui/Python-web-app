@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<header>
+<div class="container">
+<h1 class="logo">ABEL'S website</h1>
+<strong><nav>
+<ul class="menu">
+*/ Triggers the home function in python when a user clicks on the link /*
+<li><a href="{{url_for('home')}}">Home</a></li>
+<li><a href="{{url_for('about')}}">About</a></li>
+</ul>
+</nav></strong>
+</div>
+</header>
+*/ link to the home.html page /*
+<div class="container">
+*/ template inheritance of which this is the base template others are child templates which will fill in the block below/*
+{%block content%}
+*/ end of block /*
+{% endblock %}
+</div>
+<body>
+</html>

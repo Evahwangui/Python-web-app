@@ -1,10 +1,18 @@
+*/ since this is a child file the html head title and body tags are not needed
+
 <html>
 <head>
 <title>Home</title>
 </head>
-<body>
-<p>
+<body> /*
+*/ we now inherit the base file i.e the layout file /*
+{% extends 'layout.html' %}
+*/ now we set the content area to take the content from the div with the home class /*
+{%block content%}
+<div class="home">
 Simple html page 
-</p
-</body>
-</html
+</div>
+*/ end of content to be picked /*
+{% endblock %}
+*/ </body>
+</html /*
