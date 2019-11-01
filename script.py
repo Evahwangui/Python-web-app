@@ -10,6 +10,11 @@ app = Flask(__name__)
 def home():
     return "Web content goes here!"
 
+
+@app.route('/about')
+def about():
+    return "This is the about page!"
+
 # if __name__ == "__.main__":
 #     app.run(debug = True)
 
